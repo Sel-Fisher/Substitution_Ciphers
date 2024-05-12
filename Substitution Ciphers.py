@@ -160,7 +160,7 @@ def main():
                 print("Геш вхідного файлу відрізняється від гешу вихідного файлу")
                 return
         elif choice == "9":
-            cipher = select_cipher_feistel()
+            cipher = FeistelNetwork(1, 1, 1, alphabet=alphabet)
         else:
             print("Невірний вибір.")
             return
